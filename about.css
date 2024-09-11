@@ -1,0 +1,133 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.navbar {
+    position: absolute;
+    top: 20px;
+    gap: 10px;
+    width: fit-content;
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    opacity: 85%;
+}
+
+.navbar-buttons {
+    margin-left: 890px;
+}
+
+button {
+    background-color: #a42a36; /* Button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c82333; /* Button hover color */
+    color: #ffcc00;
+}
+
+/* About Section */
+.about {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.about-info {
+    display: flex;
+    flex-direction: row-reverse; /* Reverse order of flex items for mobile layout */
+    align-items: flex-start; /* Align items at the start (top) of the flex container */
+    justify-content: space-between;
+}
+
+.about-text {
+    flex: 1;
+    padding: 0 20px; /* Add padding to create space between text and image */
+}
+
+.about h2 {
+    color: #dc3545;
+    margin-bottom: 20px;
+}
+
+.about p {
+    margin-bottom: 15px;
+}
+
+.about-img {
+    flex: 1;
+}
+
+.about-img img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* Add margin to create space between image and text */
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.footer-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+    <button id="home">Home</button>
+    
+    <h1><b>GALLERY</b></h1>
+
+    <div class="gallery" onclick="openLightbox(event)">
+        <img src="./images/Gallery Images/img1.jpg"
+            alt="Image 1">
+        <img src="./images/Gallery Images/img2.jpg"
+            alt="Image 2">
+        <img src="./images/Gallery Images/img3.jpg"
+            alt="Image 3">
+        <img src="./images/Gallery Images/img4.jpg"
+            alt="Image 4">
+        <img src="./images/Gallery Images/img5.jpeg"
+            alt="Image 5">
+        <img src="./images/Gallery Images/img6.jpg"
+            alt="Image 6">
+    </div>
+
+    <!-- Lightbox container -->
+    <div id="lightbox">
+        <!-- Close button -->
+        <span id="close-btn" onclick="closeLightbox()">&times;</span>
+
+        <!-- Main lightbox image -->
+        <img id="lightbox-img" src="" alt="lightbox image">
+
+        <!-- Thumbnails container -->
+        <div id="thumbnail-container">
+            <!-- Thumbnails will be added dynamically using JavaScript -->
+        </div>
+
+
+    
+</body>
+<script src="gallery.js"></script>
+</html>

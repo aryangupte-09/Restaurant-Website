@@ -1,0 +1,97 @@
+body{
+    background-image: url("https://e0.pxfuel.com/wallpapers/1000/420/desktop-wallpaper-background-for-restaurants-background-resturant.jpg");
+    color: brown;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: #1f2120;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position:relative; /* Fixed position to stick to the bottom */
+    bottom: 0;
+    width: 100%; /* Full width */
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    font-weight: 800;
+}
+.content {
+    text-align: center; /* Center the content */
+}
+
+.navbar {
+    position: absolute;
+    margin-left: 850px;
+    top: 10px;
+    width: fit-content;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    opacity: 85%;
+}
+
+.navbar-buttons {
+    margin-right: 10x;
+}
+
+button {
+    background-color: #555; /* Button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    background-color: #777; /* Button hover color */
+    color: #ffcc00;
+}
+
+/* .button-container {
+    display: flex;
+    justify-content:flex-end;
+    gap: 15px;
+    margin-left: 10%; 
+    margin-top: 1%;
+}
+
+button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #777;
+    color: #ffcc00;
+} */
+
+
+.category {
+    flex: 1 0 calc(33.33% - 40px); /* Flex basis set to 33.33% minus padding */
+    padding: 20px;
+    border: white 1px solid;
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.category h2 {
+    margin-top: 0;
+}
+
+/* Adjustments for small screens */
+@media screen and (max-width: 768px) {
+    .category {
+        flex-basis: calc(50% - 40px); /* Two items per row for smaller screens */
+    }
+}

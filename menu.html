@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="restaurantApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+    
+<body ng-controller="MenuController as menu">
+
+    <div class="content">
+        <h1>THE BOMBAY BITES</h1>
+    </div> 
+
+<div class="navbar">
+    <div class="navbar-buttons">
+        <button id="home">Home</button>
+        <button id="veg" ng-click="menu.toggleVeg()">Veg</button>
+        <button id="nonVeg" ng-click="menu.toggleNonVeg()">Non-Veg</button>
+        <button id="reservation">Reservations</button>
+    </div>
+</div>
+
+    <div class="menu">
+        <div class="category" ng-repeat="category in menu.categories">
+            <h2>{{ category.name }}</h2>
+            <ul>
+                <li ng-repeat="item in menu.filteredItems(category.items)">
+                    <strong>{{ item.name }}</strong>
+                    <p>{{ item.description }}</p>
+                    <p>INR {{ item.price }}</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="menu.js"></script>
+</body>
+</html>

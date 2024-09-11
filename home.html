@@ -1,0 +1,44 @@
+    <!DOCTYPE html>
+    <html lang="en" ng-app="restaurantApp">
+    <head>
+        <meta charset="UTF-8">
+        <title>Restaurant Navigation</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="home.css">
+    </head>
+    <body>  
+
+        <div id="heading">
+            
+        <div class="content">
+        <h1 id="type"></h1>
+    </div>
+    </div>
+    
+        <div class="navbar">
+            <div class="navbar-buttons">
+                <button id="about">About</button>
+                <button id="menu">Menu</button>
+                <button id="reservation">Reservation</button>
+                <button id="gallery">Gallery</button>
+            </div>
+
+        <div ng-view></div>
+
+        <footer>
+            <div class="container">
+                <ul class="footer-links">
+                    <li><a href="#">Email: info@bombaybites.com</a></li>
+                    <br>
+                    <br>
+                    <li><a href="#">Phone Number: 1234568734</a></li>
+                </ul>
+                <p>&copy; 2024 The Bombay Bites. All rights reserved.</p>
+            </div>
+        </footer>
+        
+    </body>
+        <script src="./home.js"></script>
+        <?php include 'connect.php'; ?>
+    </html>
+
